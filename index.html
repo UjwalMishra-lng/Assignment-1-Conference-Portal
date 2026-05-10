@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- favicon  -->
+        <link rel="icon" type="image/png" href="./Assets/Images/favicon.ico">
+        <!-- tailwind css  -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+        <!-- CSS  -->
+        <link rel="stylesheet" href="./Assets/CSS/style.css">
+        <script src="./Assets/JS/main.js" defer></script>
+        <!-- animation -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <title>Conference - Home Page</title>
+    </head>
+
+    <body>
+        <div class="overflow-x-hidden">
+            <!-- navbar -->
+            <header class="relative">
+                <div
+                    class="max-w-[1140px] h-[100px] mx-auto flex justify-between items-center p-2">
+
+                    <div class="flex items-center">
+                        <a href="#">
+                            <img src="./Assets/Images/logo.png"
+                                alt="Conference">
+                        </a>
+                        <div class="flex flex-col ml-2 font-[600]">
+                            <h3>CONFERENCE</h3>
+                            <p class="text-[10px]">Lorem ipsum dolor</p>
+                        </div>
+                    </div>
+
+                    <nav class="hidden md:flex items-center">
+                        <ul
+                            class="flex gap-6 items-center text-[#183B56] font-[600]">
+                            <li
+                                class="hover:text-[#1565D8] transition-all duration-300"><a
+                                    href="#">Home</a></li>
+                            <li
+                                class="hover:text-[#1565D8] transition-all duration-300"><a
+                                    href="#">Landings</a></li>
+                            <li
+                                class="hover:text-[#1565D8] transition-all duration-300"><a
+                                    href="#">Pages</a></li>
+                            <li
+                                class="hover:text-[#1565D8] transition-all duration-300"><a
+                                    href="#">Docs</a></li>
+                            <li
+                                class="hover:text-[#1565D8] transition-all duration-300"><a
+                                    href="#">Help</a></li>
+                            <li>
+                                <button
+                                    class="h-[48px] px-4 border-2 border-blue-500 rounded-lg font-[700] text-[#1565D8] hover:bg-[#1565D8] hover:text-white transition-all duration-200 cursor-pointer">
+                                    Get it now
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Hamburger btn -->
+                    <button id="hamburger-btn"
+                        class="md:hidden flex items-center p-2 text-[#183B56]"
+                        aria-label="Toggle menu" aria-expanded="false"
+                        aria-controls="mobile-menu">
+                        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg"
+                            class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg id="close-icon" xmlns="http://www.w3.org/2000/svg"
+                            class="h-7 w-7 hidden" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+
+                </div>
+
+                <!-- Mobile Menu -->
+                <div id="mobile-menu"
+                    class="hidden md:hidden absolute top-[100px] left-0 right-0 bg-white border-t border-b border-gray-200 shadow-md z-50 px-4 pb-4">
+
+                    <ul class="flex flex-col text-[#183B56] font-[600]">
+                        <li class="border-b border-gray-100"><a href="#"
+                                class="block py-3 hover:text-[#1565D8] transition-colors duration-200">Home</a></li>
+                        <li class="border-b border-gray-100"><a href="#"
+                                class="block py-3 hover:text-[#1565D8] transition-colors duration-200">Landings</a></li>
+                        <li class="border-b border-gray-100"><a href="#"
+                                class="block py-3 hover:text-[#1565D8] transition-colors duration-200">Pages</a></li>
+                        <li class="border-b border-gray-100"><a href="#"
+                                class="block py-3 hover:text-[#1565D8] transition-colors duration-200">Docs</a></li>
+                        <li><a href="#"
+                                class="block py-3 hover:text-[#1565D8] transition-colors duration-200">Help</a></li>
+                    </ul>
+
+                    <button
+                        class="mt-3 p-2 h-[48px] border-2 border-blue-500 rounded-lg font-[700] text-[#1565D8] hover:bg-[#1565D8] hover:text-white transition-all duration-200">
+                        Get it now
+                    </button>
+                </div>
+
+            </header>
+
+            <!-- hero-section  -->
+            <section class="max-w-[1204px] flex flex-col lg:flex-row items-center lg:justify-between mt-8 mx-auto p-2">
+
+                <!-- left-side  -->
+                <div class="w-full lg:w-[40%] flex flex-col items-center wow animate__animated animate__fadeInLeft">
+
+                    <div class="mt-8 text-center md:text-start">
+                        <h1 class="text-[36px] md:text-[46px] lg:text-[56px] font-[700] text-[#183B56] md:leading-[68px] tracking-tight">The Future Talks Conference</h1>
+                    </div>
+
+                    <div class="text-center md:text-start">
+                        <p class="text-[16px] md:text-[18px] lg:text-[20px] font-[400] text-[#183B56] md:leading-[36px] "> Event madness gathering innovators, startups <br> & tech enthusiasts in Special Region of Yogyakarta</p>
+                    </div>
+
+                    <div class="flex justify-center md:justify-between gap-4 md:gap-8">
+                        <div class=" flex flex-col gap-y-8 mt-8">
+                            <button class="flex gap-4 items-center justify-center bg-[#1565D8] w-[140px] md:w-[195px] h-[56px] rounded-[8px] text-[14px] md:text-[18px] font-[700] text-white cursor-pointer hover:scale-105 hover:duration-300"><span>Conference</span> <img src="./Assets/Images/angle-right.png" class="mr-1 h-[18px] " alt="Right Arrow"></button>
+                            <div>
+                                <div class="flex flex-col gap-y-4">
+                                    <img src="./Assets/Images/tick.svg" class="w-[24px]" alt="Tick">
+                                    <div class="flex flex-col gap-y-2">
+                                        <h3 class="text-[14px] md:text-[16px] font-[700] text-[#183B56]">18 November 2019</h3>
+                                        <p class="text-[14px] md:text-[16px] text-[#5A7184] leading-[28px]">
+                                            25+ top notch <br> speakers @Sebostudio <br> Gallery Kreavi
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hidden md:block w-[1px] h-full bg-gray-900 mt-8"></div>
+
+                        <!-- right-card  -->
+                        <div class=" flex flex-col gap-y-8 mt-8">
+                            <button class="flex gap-4 items-center justify-center text-[#1565D8]  w-[170px] md:w-[232px] h-[56px] rounded-[8px] text-[14px] md:text-[18px] font-[700] border-2 cursor-pointer hover:scale-105 hover:duration-300 "><span>Startup Awards</span> <img src="./Assets/Images/angle-right-blue.png" class="mr-1 h-[18px]" alt="Right Arrow"></button>
+                            <div>
+                                <div class="flex flex-col gap-y-4">
+                                    <img src="./Assets/Images/tick.svg" class="w-[24px]" alt="Tick">
+                                    <div class="flex flex-col gap-y-2">
+                                        <h3 class="text-[14px] md:text-[16px] font-[700] text-[#183B56]">100+ startups</h3>
+                                        <p class="text-[14px] md:text-[16px] text-[#5A7184] leading-[28px]">
+                                            Top 8 startups competing <br> in final @TheFutureTalks <br> Conference 2019
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right-side  -->
+                <div class="w-full lg:w-[60%] flex justify-center lg:justify-end mt-8 md:mt-0 wow animate__animated animate__fadeInRight">
+                    <img src="./Assets/Images/hero-section-right.png" class="w-full max-w-[635px] h-auto" alt="Conference">
+                </div>
+
+            </section>
+
+            <!-- sponsor section  -->
+            <section class="max-w-[1140px] mx-auto flex flex-col mt-8 p-2 gap-y-4">
+
+                <h2
+                    class="w-full text-[#183B56] text-[24px] font-[700] text-center leading-[32px] tracking-tight">Sponsors of The FutureTalks Conference
+                </h2>
+
+                <div class="grid grid-cols-3 md:grid-cols-5 justify-items-center mt-8 gap-4">
+                    <div class="p-2 sponsor-img wow animate__animated animate__backInLeft">
+                        <img src="./Assets/Images/slack.png" alt="slack">
+                    </div>
+                    <div class="p-2 sponsor-img wow animate__animated animate__backInLeft">
+                        <img src="./Assets/Images/netflix.png" alt="netflix">
+                    </div>
+                    <div class="p-2 sponsor-img wow animate__animated animate__fadeInDown">
+                        <img src="./Assets/Images/google.png" alt="google">
+                    </div>
+                    <div class="p-2 sponsor-img wow animate__animated animate__backInRight">
+                        <img src="./Assets/Images/airbnb.png"alt="airbnb">
+                    </div>
+                    <div class="p-2 sponsor-img wow animate__animated animate__backInRight">
+                        <img src="./Assets/Images/uber.png"  alt="uber">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- divider  -->
+            <div class="max-w-[1140px] mt-32 mx-auto border-b-2 border-[#E5EAF4]"></div>
+
+            <!-- conference topics section -->
+            <section class="max-w-[1140px] flex flex-col gap-y-8 mt-32 mx-auto p-2 ">
+           
+                <div class="w-[118px] bg-[#ebf7f2] rounded-full p-2 text-center">
+                    <span class="text-[#36B37E] font-[600] text-[14px] ">OUR TOPICS</span>
+                </div>
+           
+                <div>
+                    <h2 class="w-full text-[#183B56] text-[36px] font-[700] leading-[32px] tracking-tight">Conference Topics</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center  gap-8">
+
+                    <!-- card-1  -->
+                    <div class="conference-topic-card-container wow animate__animated animate__zoomIn w-[340px] md:w-[360px]">
+                        <div class="conference-topic-card-1 p-8 flex flex-col justify-end gap-y-4 ">
+                            <div>
+                                <h3 class="text-white text-[28px] font-[700] leading-[32px] tracking-tight">Future of Work</h3>
+                            </div>
+                            <div class="text-[#FFFFFF] font-[400] text-[20px] leading-[32px]">
+                                <p>Majority of peole will work in <br> jobs that don't exist today.</p>
+                            </div>
+                            <div>
+                                <button class="flex gap-4 items-center justify-center text-[18px] text-[#1565D8] font-[700] cursor-pointer hover:scale-105 hover:duration-300"><span>Learn More</span> <img src="./Assets/Images/angle-right-blue.png" class="mr-1 h-[18px] " alt="Right Arrow"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-2  -->
+                    <div class="conference-topic-card-container wow animate__animated animate__zoomIn w-[340px] md:w-[360px]">
+                        <div class="conference-topic-card-2 p-8 flex flex-col justify-end gap-y-4 ">
+                            <div>
+                                <h3 class="text-white text-[28px] font-[700] leading-[32px] tracking-tight">Future of Data</h3>
+                            </div>
+                            <div class="text-[#FFFFFF] font-[400] text-[20px] leading-[32px]">
+                                <p>Thanks to never-ending piles of <br> data & the amount of insight</p>
+                            </div>
+                            <div>
+                            <button class="flex gap-4 items-center justify-center text-[18px] text-[#1565D8] font-[700] cursor-pointer hover:scale-105 hover:duration-300"><span>Learn More</span> <img src="./Assets/Images/angle-right-blue.png" class="mr-1 h-[18px] " alt="Right Arrow"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-3  -->
+                    <div class="conference-topic-card-container wow animate__animated animate__zoomIn w-[340px] md:w-[360px]">
+
+                        <div class="conference-topic-card-3 p-8 flex flex-col justify-end gap-y-4 ">
+                            <div>
+                                <h3 class="text-white text-[28px] font-[700] leading-[32px] tracking-tight">Future of Learning</h3>
+                            </div>
+                            <div class="text-[#FFFFFF] font-[400] text-[20px] leading-[32px]">
+                                <p>A constant ability to learn will <br> be on the most crucial skills.</p>
+                            </div>
+                            <div>
+                            <button class="flex gap-4 items-center justify-center text-[18px] text-[#1565D8] font-[700] cursor-pointer hover:scale-105 hover:duration-300"><span>Learn More</span> <img src="./Assets/Images/angle-right-blue.png" class="mr-1 h-[18px] " alt="Right Arrow"></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- quote-section  -->
+            <section class="max-w-[950px] mx-auto flex flex-col p-4 mt-32 gap-4 wow animate__animated animate__fadeIn">
+                <div>
+                    <img src="./Assets/Images/quote-left.png" class="quote-symbol" alt="quote">
+                </div>
+                <div>
+                    <p class="quote text-[#183B56] text-[40px] font-[400] leading-[60px] tracking-tight">“We belief was that if we kept putting great products in front of customers, they would continue to open their wallets."</p>
+                </div>
+                <div>
+                    <p class="text-[#5A7184] text-[18px] font-[400]">Steve Jobs, Apple</p>
+                </div>
+            </section>
+            
+
+            <div class="w-full bg-[#F8FBFF]">
+
+                <!-- future-talks-speakers section  -->
+                <section class="w-full bg-[#F8FBFF] mt-32 p-2">
+
+                    <div class="max-w-[1140px] flex flex-col gap-y-8  mx-auto pt-16">
+                        <div class="w-[118px] bg-[#ebf7f2] rounded-full p-2 text-center">
+                            <span class="text-[#36B37E] font-[600] text-[14px] ">SPEAKERS</span>
+                        </div>
+            
+                        <div>
+                            <h2 class="w-full text-[#183B56] text-[36px] font-[700] leading-[32px] tracking-tight md:text-center lg:text-start">TheFutureTalks Speakers</h2>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center lg:justify-items-between mt-8">
+                            <!-- card-1  -->
+                            <div class="max-w-[264px] flex flex-col future-speakers-card wow animate__animated animate__zoomIn">
+                                <img class="" src="./Assets/Images/speaker-1.png" alt="speaker">
+                                <div>
+                                    <h2 class="text-[#183B56] text-[36px] font-[700] tracking-tight mt-4">Claudio Giglieri</h2>
+                                </div>
+
+                                <div class="flex flex-col gap-2 mt-4">
+                                    <div class="flex gap-4"> 
+                                        <img class="h-[14px] my-auto" src="./Assets/Images/check.png" alt="tick">
+                                        <p class="text-[#5A7184] font-[400]">Co-creator of Skype</p>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <img class="h-[14px] mt-2" src="./Assets/Images/check.png" alt="tick">
+                                        <p class="text-[#5A7184] font-[400]">Investor at Sebo Digital Ventures</p>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+
+                            <!-- card-2  -->
+                            <div class="max-w-[264px] flex flex-col mt-12 future-speakers-card wow animate__animated animate__zoomIn">
+                                <img class="" src="./Assets/Images/speaker-2.png" alt="speaker">
+                                <div>
+                                    <h2 class="text-[#183B56] text-[36px] font-[700] tracking-tight mt-4">Elsie Mendoza</h2>
+                                </div>
+
+                                <div class="flex flex-col gap-2 mt-4">
+                                    <div class="flex gap-4"> 
+                                        <img class="h-[14px] my-auto" src="./Assets/Images/check.png" alt="tick">
+                                        <p class="text-[#5A7184] font-[400]">VP of BukaDagang</p>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <img class="h-[14px] mt-2" src="./Assets/Images/check.png" alt="tick">
+                                        <p class="text-[#5A7184] font-[400]">Co-founder at Slack</p>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+
+                            <!-- card-3  -->
+                            <div class="max-w-[264px] flex flex-col mt-12 lg:mt-0 future-speakers-card wow animate__animated animate__zoomIn">
+                                <img class="" src="./Assets/Images/speaker-3.png" alt="speaker">
+                                <div>
+                                    <h2 class="text-[#183B56] text-[36px] font-[700] tracking-tight mt-4">Philip Castro</h2>
+                                </div>
+
+                                <div class="flex flex-col gap-2 mt-4">
+                                    <div class="flex gap-4"> 
+                                        <img class="h-[14px] my-auto" src="./Assets/Images/check.png" alt="tick">
+                                        <p class="text-[#5A7184] font-[400]">CEO at Berkarya</p>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <img class="h-[14px] mt-2" src="./Assets/Images/check.png" alt="tick">
+                                        <p class="text-[#5A7184] font-[400]">Investor at Sebo Digital Ventures</p>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+
+                            <!-- card-4  -->
+                            <div class="max-w-[264px] flex flex-col mt-12 future-speakers-card wow animate__animated animate__zoomIn">
+                                <img class="" src="./Assets/Images/speaker-4.png" alt="speaker">
+                                <div>
+                                    <h2 class="text-[#183B56] text-[36px] font-[700] tracking-tight mt-4">Carrie Angela</h2>
+                                </div>
+
+                                <div class="flex flex-col gap-2 mt-4">
+                                    <div class="flex gap-4"> 
+                                        <img class="h-[14px] my-auto" src="./Assets/Images/check.png" alt="tick">
+                                        <p class="text-[#5A7184] font-[400]">Founder of Nike</p>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <img class="h-[14px] mt-2" src="./Assets/Images/check.png" alt="tick">
+                                        <p class="text-[#5A7184] font-[400]">Investor at BukaDaga</p>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+
+                            
+                        </div>
+
+                    </div>
+                    
+                </section>
+
+                <!-- about-us section  -->
+                <section class="max-w-[1122px] mt-32 mx-auto xl:relative p-2">
+
+                    <img src="./Assets/Images/about-us-section.png" class="pt-12 md:mx-auto xl:mx-0 wow animate__animated animate__fadeInLeft" alt="speaker">
+                    
+                    <div class="about-us-box xl:absolute w-[80%] xl:w-[562px] xl:h-[480px] bg-white  xl:top-0 xl:right-0 rounded-[16px] flex flex-col gap-6 justify-center p-8 mx-auto xl:mx-0 mt-8 xl:mt-0 wow animate__animated animate__fadeInRight">
+                        <div class="w-[118px] bg-[#e8f0fb] rounded-full p-2 text-center">
+                            <span class="text-[#1565D8] font-[600] text-[14px] ">ARCHIVE</span>
+                        </div>
+            
+                        <div>
+                            <h2 class="w-full text-[#183B56] text-[36px] font-[700] leading-[32px] tracking-tight md:text-center lg:text-start">TheFutureTalks 2018</h2>
+                        </div>
+
+                        <div>
+                            <p class="text-[#5A7184] text-[18px] font-[400] leading-[32px]">We share common trends and strategies improving <br> your rental income and outcome.</p>
+                        </div>
+
+                        <div class="grid grid-cols-2 xl:grid-cols-3 gap-y-8 gap-x-8">
+                            <!-- card-1  -->
+                            <div class="flex flex-col items-center">
+                                <div class="flex items-center gap-4">
+                                    <img src="./Assets/Images/tick-2.svg" class="h-[24px] w-[24px]" alt="tick">
+                                    <h3 class="text-[36px] font-[700] text-[#183B56]">3500</h3>
+                                </div>
+                                <p class="text-cente text-[#5A7184]">Visitors</p>
+                            </div>
+
+                            <!-- card-2  -->
+                            <div class="flex flex-col items-center">
+                                <div class="flex items-center gap-4">
+                                    <img src="./Assets/Images/tick-2.svg" class="h-[24px] w-[24px]" alt="tick">
+                                    <h3 class="text-[36px] font-[700] text-[#183B56]">36</h3>
+                                </div>
+                                <p class="text-[#5A7184]">Startups</p>
+                            </div>
+
+                            <!-- card-3  -->
+                            <div class="flex flex-col items-center">
+                                <div class="flex items-center gap-4">
+                                    <img src="./Assets/Images/tick-2.svg" class="h-[24px] w-[24px]" alt="tick">
+                                    <h3 class="text-[36px] font-[700] text-[#183B56]">30</h3>
+                                </div>
+                                <p class="text-center text-[#5A7184]">Mentors</p>
+                            </div>
+
+                            <!-- card-4  -->
+                            <div class="flex flex-col items-center ">
+                                <div class="flex items-center gap-4">
+                                    <img src="./Assets/Images/tick-2.svg" class="h-[24px] w-[24px]" alt="tick">
+                                    <h3 class="text-[36px] font-[700] text-[#183B56]">8</h3>
+                                </div>
+                                <p class="text-center text-[#5A7184]">Countries</p>
+                            </div>
+
+                            <!-- card-5  -->
+                            <div class="flex flex-col items-center">
+                                <div class="flex items-center gap-4">
+                                    <img src="./Assets/Images/tick-2.svg" class="h-[24px] w-[24px]" alt="tick">
+                                    <h3 class="text-[36px] font-[700] text-[#183B56]">6</h3>
+                                </div>
+                                <p class="text-center text-[#5A7184]">Stages</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- event-tickets section  -->
+                <section class="max-w-[580px] mx-auto mt-32 p-2 flex flex-col items-center gap-y-8 z-50">
+
+                    <div class="w-[132px] bg-[#ebf7f2] rounded-full p-2 text-center">
+                        <span class="text-[#36B37E] font-[600] text-[14px] ">EVENT TICKETS</span>
+                    </div>
+            
+                    <div>
+                        <h2 class="w-full text-[#183B56] text-[36px] font-[700] leading-[32px] tracking-tight text-center">Grab you seat now fast!</h2>
+                    </div>
+
+                    <div>
+                        <p class="text-[#5A7184] text-[18px] font-[400] text-center">Tired of secretive bids? Our platform provides a transparent rental auction with the ability to submit custom offers. </p>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <!-- card-1  -->
+                        <div class="flex flex-col gap-y-4 bg-white rounded-[16px] w-[340px] lg:w-[400px] h-[464px] justify-between p-8 z-[50] wow animate__animated animate__zoomIn event-ticket-cards">
+                            <div class="p-2 border border-[#1565D8] rounded-full w-[64px] h-[64px] flex justify-center items-center">
+                                <img src="./Assets/Images/icon-home.png" class="border-2 border-dashed m-2 p-1" alt="home-icon">
+                            </div>
+                            <div>
+                                <h2 class="w-full text-[#183B56] text-[24px] font-[700] leading-[32px] tracking-tight">Conference 2019</h2>
+                            </div>
+
+                            <div>
+                                <p class="text-[#5A7184] text-[18px] font-[400] leading-[32px]">Conference is a series of events in TheFutureTalks</p>
+                            </div>
+
+                            <div>
+                                <h2 class="w-full text-[#183B56] text-[40px] mt-2 font-[700] leading-[32px] tracking-tight">$390</h2>
+                            </div>
+
+                            <div class="mt-4">
+                                <button class="flex gap-4 items-center justify-center bg-[#1565D8] w-[150px] md:w-[186px] h-[56px] rounded-[8px] text-[16px] md:text-[18px] font-[700] text-white cursor-pointer hover:scale-105 hover:duration-300"><span>Buy Ticket</span> <img src="./Assets/Images/angle-right.png" class="mr-1 h-[18px] " alt="Right Arrow"></button>
+                            </div>
+
+                        </div>
+
+                        <!-- card-2  -->
+                         <div class="event-ticket-cards flex flex-col gap-y-4 bg-white rounded-[16px] w-[340px] lg:w-[400px] h-[464px] justify-between p-8 z-[50] wow animate__animated animate__zoomIn event-ticket-cards">
+                            <div class="p-2 border border-[#1565D8] rounded-full w-[64px] h-[64px] flex justify-center items-center">
+                                <img src="./Assets/Images/icon-rocket.png" class="border-2 border-dashed m-2 p-1" alt="rocket-icon">
+                            </div>
+                            <div>
+                                <h2 class="w-full text-[#183B56] text-[24px] font-[700] leading-[32px] tracking-tight">Startup Awards</h2>
+                            </div>
+
+                            <div>
+                                <p class="text-[#5A7184] text-[18px] font-[400] leading-[32px]">Startup Awards is a series of events in the Indonesian countries</p>
+                            </div>
+
+                            <div>
+                                <h2 class="w-full text-[#183B56] text-[40px] mt-2 font-[700] leading-[32px] tracking-tight">$330</h2>
+                            </div>
+
+                            <div class="mt-4">
+                                 <button class="flex gap-4 items-center justify-center text-[#1565D8]  w-[180px] md:w-[186px] h-[56px] rounded-[8px] text-[16px] md:text-[18px] font-[700] border-2 cursor-pointer hover:scale-105 hover:duration-300"><span>Buy Ticket</span> <img src="./Assets/Images/angle-right-blue.png" class="mr-1 h-[18px]" alt="Right Arrow"></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- background-curved image  -->
+                <section class="mt-[-180px] z-[10]">  
+                    <img src="./Assets/Images/Wave.svg" alt="background-image">
+                </section>
+
+                <!-- footer section  -->
+                <footer class="w-full bg-[#0D2436] mt-[-10px] p-2 pb-8">
+                    <div class="max-w-[1045px] mx-auto flex flex-col md:flex-row justify-between items-center md:items-start pt-32">
+                        <!-- part-1  -->
+                        <div class="md:w-[25%] flex flex-col gap-y-8 mt-16 md:mt-0">
+                            <div class="flex items-center">
+                                <a href="#">
+                                    <img src="./Assets/Images/logo.png"
+                                alt="Conference">
+                                </a>
+                                <div class="flex flex-col ml-2 font-[600] text-white">
+                                    <h3>CONFERENCE</h3>
+                                    <p class="text-[8px] text-center">Lorem ipsum dolor</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-[#5A7184] leading-[28px] font-[400]">Build a modern and creative website with crealand</p>
+                            </div>
+                            <!-- icons  -->
+                            <div class="flex  gap-x-8">
+                                <div class="social-icons">
+                                    <a href="#"><img src="./Assets/Images/google-footer.png" alt="google"></a>
+                                </div>
+                                <div class="social-icons">
+                                    <a href="#"><img src="./Assets/Images/twitter.png" alt="twitter"></a>
+                                </div>
+                                <div class="social-icons">
+                                    <a href="#"><img src="./Assets/Images/instagram.png" alt="instagram"></a>
+                                </div>
+                                <div class="social-icons">
+                                    <a href="#"><img src="./Assets/Images/linkedin.png" alt="linkedin"></a>
+                                </div>
+                                <div class="social-icons">
+                                    <a href="#"><img src="./Assets/Images/youtube.png" alt="youtube"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- part-2  -->
+                        <div class="md:w-[75%] grid grid-cols-2 lg:grid-cols-4 justify-items-center gap-12 mt-8 md:mt-0">
+                            <div>
+                                <h3 class="text-[#5A7184] text-[18px] font-[700]">Product</h3>
+                                <ul class="mt-6 text-[#959EAD] font-[400] flex flex-col gap-y-4">
+                                    <li class="hover:text-white duration-300"><a href="#">Landingpage</a></li>
+                                    <li class="hover:text-white duration-300"><a href="#">Features</a></li>
+                                    <li class="hover:text-white duration-300"><a href="#">Documentation</a></li>
+                                    <li class="hover:text-white duration-300"><a href="#">Referral Program</a></li>
+                                    <li class="hover:text-white duration-300"><a href="#">Pricing</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-[#5A7184] text-[18px] font-[700]">Services</h3>
+                                <ul class="mt-6 text-[#959EAD] font-[400] flex flex-col gap-y-4">
+                                    <li class="hover:text-white duration-300"><a href="#">Documentation</a></li>
+                                    <li class="hover:text-white duration-300"><a href="#">Design</a></li>
+                                    <li class="hover:text-white duration-300"><a href="#">Themes</a></li>
+                                    <li class="hover:text-white duration-300"><a href="#">Illustrations</a></li>
+                                    <li class="hover:text-white duration-300"><a href="#">UI Kit</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-[#5A7184] text-[18px] font-[700]">Company</h3>
+                                <ul class="mt-6 text-[#959EAD] font-[400] flex flex-col gap-y-4">
+                                    <li class="hover:text-white duration-300"><a href="#">About</a></li>
+                                    <li class="hover:text-white duration-300"><a href="#">Terms</a></li>
+                                    <li class="hover:text-white duration-300"><a href="#">Privacy Policy</a></li>
+                                    <li class="hover:text-white duration-300"><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-[#5A7184] text-[18px] font-[700]">More</h3>
+                                <ul class="mt-6 text-[#959EAD] font-[400] flex flex-col gap-y-4">
+                                    <li class="hover:text-white duration-300"><a href="#">Documentation</a></li>
+                                    <li class="hover:text-white duration-300"><a href="#">License</a></li>
+                                    <li class="hover:text-white duration-300"><a href="#">Changelog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+
+        </div>
+
+        <!-- WOW JS CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+        <script>
+            new WOW({
+                animateClass: 'animate__animated',
+                offset: 100,
+            }).init();
+        </script>
+
+    </body>
+
+</html>
