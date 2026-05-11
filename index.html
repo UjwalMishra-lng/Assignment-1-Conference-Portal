@@ -2,27 +2,46 @@
 <html lang="en">
 
     <head>
+        <!-- Meta -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- favicon  -->
+
+        <!-- Title -->
+        <title>Conference - Home Page</title>
+
+        <!-- Favicon -->
         <link rel="icon" type="image/png" href="./Assets/Images/favicon.ico">
-        <!-- tailwind css  -->
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <!-- google fonts -->
+
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-            rel="stylesheet">
-        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!-- CSS -->
         <link rel="stylesheet" href="./Assets/CSS/style.css">
+
+        <!-- Tailwind -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <!-- JS files -->
         <script src="./Assets/JS/main.js" defer></script>
-        <!-- animation -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-        <title>Conference - Home Page</title>
+
+        <!-- WOW JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+        <!-- WOW Init -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                new WOW({
+                    animateClass: 'animate__animated',
+                    offset: 100,
+                }).init();
+            });
+        </script>
     </head>
 
     <body>
@@ -180,24 +199,29 @@
                     class="w-full text-[#183B56] text-[24px] font-[700] text-center leading-[32px] tracking-tight">Sponsors of The FutureTalks Conference
                 </h2>
 
-                <div class="grid grid-cols-3 md:grid-cols-5 justify-items-center mt-8 gap-4">
-                    <div class="p-2 sponsor-img wow animate__animated animate__backInLeft">
+                <div class="grid grid-cols-2 md:grid-cols-5 place-items-center mt-8 gap-4">
+
+                    <div class="p-2 wow animate__animated animate__backInLeft">
                         <img src="./Assets/Images/slack.png" alt="slack">
                     </div>
-                    <div class="p-2 sponsor-img wow animate__animated animate__backInLeft">
+
+                    <div class="p-2 wow animate__animated animate__backInLeft">
                         <img src="./Assets/Images/netflix.png" alt="netflix">
                     </div>
-                    <div class="p-2 sponsor-img wow animate__animated animate__fadeInDown">
-                        <img src="./Assets/Images/google.png" alt="google">
-                    </div>
-                    <div class="p-2 sponsor-img wow animate__animated animate__backInRight">
-                        <img src="./Assets/Images/airbnb.png"alt="airbnb">
-                    </div>
-                    <div class="p-2 sponsor-img wow animate__animated animate__backInRight">
-                        <img src="./Assets/Images/uber.png"  alt="uber">
+
+                    <div class="p-2 wow animate__animated animate__backInRight">
+                        <img src="./Assets/Images/airbnb.png" alt="airbnb">
                     </div>
 
-                </div>
+                    <div class="p-2 wow animate__animated animate__backInRight">
+                        <img src="./Assets/Images/uber.png" alt="uber">
+                    </div>
+
+                    <div class="p-2 wow animate__animated animate__fadeInDown col-span-2 md:col-span-1 flex justify-center">
+                        <img src="./Assets/Images/google.png" alt="google">
+                    </div>
+
+                </div>  
 
             </section>
 
@@ -296,7 +320,7 @@
 
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center lg:justify-items-between mt-8">
                             <!-- card-1  -->
-                            <div class="max-w-[264px] flex flex-col future-speakers-card wow animate__animated animate__zoomIn">
+                            <div class="max-w-[360px] flex flex-col future-speakers-card wow animate__animated animate__zoomIn ">
                                 <img class="" src="./Assets/Images/speaker-1.png" alt="speaker">
                                 <div>
                                     <h2 class="text-[#183B56] text-[36px] font-[700] tracking-tight mt-4">Claudio Giglieri</h2>
@@ -318,7 +342,7 @@
                             </div>
 
                             <!-- card-2  -->
-                            <div class="max-w-[264px] flex flex-col mt-12 future-speakers-card wow animate__animated animate__zoomIn">
+                            <div class="max-w-[360px] flex flex-col mt-12 future-speakers-card wow animate__animated animate__zoomIn">
                                 <img class="" src="./Assets/Images/speaker-2.png" alt="speaker">
                                 <div>
                                     <h2 class="text-[#183B56] text-[36px] font-[700] tracking-tight mt-4">Elsie Mendoza</h2>
@@ -340,7 +364,7 @@
                             </div>
 
                             <!-- card-3  -->
-                            <div class="max-w-[264px] flex flex-col mt-12 lg:mt-0 future-speakers-card wow animate__animated animate__zoomIn">
+                            <div class="max-w-[360px] flex flex-col mt-12 lg:mt-0 future-speakers-card wow animate__animated animate__zoomIn">
                                 <img class="" src="./Assets/Images/speaker-3.png" alt="speaker">
                                 <div>
                                     <h2 class="text-[#183B56] text-[36px] font-[700] tracking-tight mt-4">Philip Castro</h2>
@@ -362,7 +386,7 @@
                             </div>
 
                             <!-- card-4  -->
-                            <div class="max-w-[264px] flex flex-col mt-12 future-speakers-card wow animate__animated animate__zoomIn">
+                            <div class="max-w-[360px] flex flex-col mt-12 future-speakers-card wow animate__animated animate__zoomIn">
                                 <img class="" src="./Assets/Images/speaker-4.png" alt="speaker">
                                 <div>
                                     <h2 class="text-[#183B56] text-[36px] font-[700] tracking-tight mt-4">Carrie Angela</h2>
@@ -395,7 +419,7 @@
 
                     <img src="./Assets/Images/about-us-section.png" class="pt-12 md:mx-auto xl:mx-0 wow animate__animated animate__fadeInLeft" alt="speaker">
                     
-                    <div class="about-us-box xl:absolute w-[80%] xl:w-[562px] xl:h-[480px] bg-white  xl:top-0 xl:right-0 rounded-[16px] flex flex-col gap-6 justify-center p-8 mx-auto xl:mx-0 mt-8 xl:mt-0 wow animate__animated animate__fadeInRight">
+                    <div class="about-us-box xl:absolute w-[340px] xl:w-[562px] xl:h-[480px] bg-white  xl:top-0 xl:right-0 rounded-[16px] flex flex-col gap-6 justify-center p-8 mx-auto xl:mx-0 mt-8 xl:mt-0 wow animate__animated animate__fadeInRight">
                         <div class="w-[118px] bg-[#e8f0fb] rounded-full p-2 text-center">
                             <span class="text-[#1565D8] font-[600] text-[14px] ">ARCHIVE</span>
                         </div>
@@ -611,16 +635,6 @@
             </div>
 
         </div>
-
-        <!-- WOW JS CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-        <script>
-            new WOW({
-                animateClass: 'animate__animated',
-                offset: 100,
-            }).init();
-        </script>
 
     </body>
 
